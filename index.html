@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src=
+"https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.5/dist/html2canvas.min.js"></script>
+    <title>Photo Editor</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="img-container">
+            <a class="download" id="download">Download</a>
+        </div>
+
+        <div class="styles">
+            <p>
+                <label for="brightness">Brightness
+                    <input type="range" class="slider" name="brightness" id="brightness" min="100" max="200" value="0">
+                </label>
+            </p>
+
+            <p>
+                <label for="blur">Blur
+                    <input type="range" class="slider" name="blur" id="blur" min="0" max="7" value="0">
+                </label>
+            </p>
+
+            <p>
+                <label for="contrast">Contrast
+                    <input type="range" class="slider" name="contrast" id="contrast" min="100" max="250" value="0">
+                </label>
+            </p>
+
+            <p>
+                <label for="grayscale">Grayscale
+                    <input type="range" class="slider" name="grayscale" id="grayscale" min="0" max="100" value="0">
+                </label>
+            </p>
+            
+            <p>
+                <label for="hue-rotate">Hue Rotate
+                    <input type="range" class="slider" name="hue-rotate" id="hue-rotate" min="0" max="360" value="0">
+                </label>
+            </p>
+
+            <p>
+                <label for="invert">Invert
+                    <input type="range" class="slider" name="invert" id="invert" min="0" max="100" value="0">
+                </label>
+            </p>
+
+            <p>
+                <label for="opacity">Opacity
+                        <input type="range" class="slider" name="opacity" id="opacity" min="0" max="100" value="100">
+                </label>
+            </p>
+        </div>
+
+        <canvas id="image" width="400px" height="400px"></canvas>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
