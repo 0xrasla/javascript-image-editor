@@ -40,22 +40,5 @@ function applyStyles() {
     }
 }
 
-function saveIt() {
-    let div = document.querySelector('.image-container');
-    let saveBtn = document.querySelector(".download");
-
-    saveBtn.addEventListener('click', () => {
-        html2canvas(div).then(
-            function (canvas) {
-                var link = document.createElement('a');
-                link.download = 'draw.png';
-                link.href = canvas.toDataURL()
-                link.click();
-            }
-        )
-    })
-}
-
-
 init()
 applyStyles()
